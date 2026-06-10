@@ -17,7 +17,9 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from relaciones import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("consultas/", views.consultas_orm, name="consultas_orm"),
 ]
